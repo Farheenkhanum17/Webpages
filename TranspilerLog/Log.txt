@@ -1,0 +1,77 @@
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler>
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm init -y
+Wrote to C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler\package.json:
+
+{
+  "name": "Transpiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm install --save-dev @babel/core @babel/cli
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN Transpiler@1.0.0 No description
+npm WARN Transpiler@1.0.0 No repository field.
+
++ @babel/core@7.10.5
++ @babel/cli@7.10.5
+added 192 packages from 125 contributors and audited 193 packages in 28.904s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm run build
+
+> bable-es6-works@1.0.0 build C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler
+> babel Source -d Output
+
+Successfully compiled 0 files with Babel (26ms).
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm install @babel/preset-env --save-dev
+npm WARN bable-es6-works@1.0.0 No description
+npm WARN bable-es6-works@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @babel/preset-env@7.10.4
+added 99 packages from 25 contributors and audited 292 packages in 20.557s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm run build
+
+> bable-es6-works@1.0.0 build C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler
+> babel Source -d Output
+
+Successfully compiled 0 files with Babel (8ms).
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm run build
+
+> bable-es6-works@1.0.0 build C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler
+> babel Source -d Output
+
+Successfully compiled 1 file with Babel (2962ms).
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler> npm run build
+
+> bable-es6-works@1.0.0 build C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler
+> babel Source -d Output
+
+Successfully compiled 1 file with Babel (33838ms).
+PS C:\Users\FARHEEN\Documents\VisualStudioCode\Transpiler>
