@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel=stylesheet type='text/css' href="calc.css" >
+</head>
+<body>
+    <div class = "wrap"> </div>
+        <div class="main">
+            <form name="form">
+                <input class="text" name = "text">
+                  <table>
+                       <tr>
+                            <td><input type="button" class = "numberbutton" value="C" onclick="clean()" ></td>
+                            <td><input type="button" class = "numberbutton" value="<-" onclick="back()"></td>
+                            <td><input type="button" class = "numberbutton" value="/" onclick="getNumber('/')"></td>
+                            <td><input type="button" class = "numberbutton" value="x" onclick="getNumber('*')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class = "numberbutton" value="7" onclick="getNumber(7)"></td>
+                            <td><input type="button" class = "numberbutton" value="8" onclick="getNumber(8)"></td>
+                            <td><input type="button" class = "numberbutton" value="9" onclick="getNumber(9)"></td>
+                            <td><input type="button" class = "numberbutton" value="-" onclick="getNumber('-')" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class = "numberbutton " value="4" onclick="getNumber(4)"></td>
+                            <td><input type="button" class = "numberbutton" value="5" onclick="getNumber(5)"></td>
+                            <td><input type="button" class = "numberbutton" value="6" onclick="getNumber(6)"></td>
+                            <td><input type="button" class = "numberbutton" value="+" onclick="getNumber('+')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class = "numberbutton" value="1" onclick="getNumber(1)"></td>
+                            <td><input type="button" class = "numberbutton" value="2" onclick="getNumber(2)"></td>
+                            <td><input type="button" class = "numberbutton" value="3" onclick="getNumber(3)"></td>
+                            <td rowspan="2"><input type="button" class = "numberbutton" value="=" style ="height:104px"onclick="equal()" ></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" class = "numberbutton" value="0" style="width: 104px;" onclick="getNumber(0)"></td>
+                            <td ><input type="button" class = "numberbutton" value="." onclick="getNumber('.')"></td>
+                        </tr>
+                    </table>
+            </form>
+        </div>
+    <script>
+      function getNumber(num){
+          document.form.text.value=document.form.text.value+num;
+      }
+      function equal()
+      {
+          var eq = document.form.text.value;
+          if(eq){
+              document.form.text.value=eval(eq);
+          }
+      }
+      function clean(){
+        document.form.text.value = ""; 
+      }
+      function back(){
+        var eq = document.form.text.value;
+        document.form.text.value=eq.substring(0,eq.length-1)
+
+      }
+
+    </script>
+</body>
+
+</html>
