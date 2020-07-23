@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ .text{
+     width: 218px;
+     margin: 5px;
+     padding: 15px;   
+     font-size: 20px;
+     background-color: white;
+ }
+ .numberbutton{
+     margin: 2px;
+     width:50;
+     height: 50;
+     border-radius:5px;
+     font-size: 23px;
+     background-color: rgb(238, 154, 58);
+ }
+ .main{
+     top:50%;
+     left:50%;
+     width:300x;
+     height: 350px;
+     position: absolute;
+     transform: translateX(-50%)translateY(-50%);
+     background-color: #efecec;
+     border: 1px solid gray;
+ }
+ .numberbutton:hover{
+     background-color: rgb(94, 90, 90);
+     font-weight: bold;
+ }
+ .wrap
+ {
+     background: linear-gradient(to left,rgb(12, 48, 53),rgb(245, 65, 52));
+     height: 100%;
+     width: 100%;
+ }
